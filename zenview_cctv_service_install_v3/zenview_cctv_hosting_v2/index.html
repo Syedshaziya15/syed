@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ZENVIEW CCTV - CCTV camera installation, servicing, maintenance and security camera solutions in Proddatur, Andhra Pradesh.">
+<meta name="theme-color" content="#071827">
+<title>ZENVIEW CCTV | Camera Installation & Service</title>
+<style>
+:root{--navy:#071827;--navy2:#0a2638;--blue:#1ca8f2;--cyan:#37b5ff;--text:#1c2430;--muted:#65737e;--bg:#f6f8fb;--white:#fff;--green:#25D366}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
+a{color:inherit}
+nav{height:74px;background:rgba(7,24,39,.97);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;z-index:50;box-shadow:0 2px 18px rgba(0,0,0,.15)}
+.logo{font-size:22px;font-weight:800;white-space:nowrap}
+.logo span{color:var(--cyan)}
+.links a{color:#dce8ef;text-decoration:none;margin-left:22px;font-size:15px}
+.links a:hover{color:#fff}
+.hero{min-height:610px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,15,27,.95),rgba(3,15,27,.60)),url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1800&q=85') center/cover;color:#fff}
+.hero-content{max-width:760px;margin-left:8%;padding:60px 20px}
+.badge{display:inline-block;background:var(--blue);padding:8px 16px;border-radius:25px;font-weight:700;font-size:13px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.04;margin:18px 0}
+.hero p{font-size:19px;line-height:1.65;color:#d5e2e8;max-width:690px}
+.btn{display:inline-block;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:700;margin:10px 8px 0 0;transition:.2s}
+.blue{background:var(--blue);color:#fff}
+.green{background:var(--green);color:#fff}
+.outline{border:1px solid #b7c9d2;color:#fff}
+.btn:hover{transform:translateY(-2px)}
+section{padding:75px 8%;max-width:1350px;margin:auto}
+.title{text-align:center;margin-bottom:42px}
+.title h2{font-size:38px;margin:12px 0 10px;color:var(--navy2)}
+.title p{color:#687783}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:#fff;padding:28px;border-radius:16px;box-shadow:0 7px 25px rgba(20,50,70,.09);transition:.2s}
+.card:hover{transform:translateY(-4px)}
+.icon{font-size:40px}
+.card h3{color:#0b334b;margin:12px 0 8px}
+.card p{line-height:1.6;color:var(--muted)}
+.product-gallery{background:#eef4f8;max-width:none}
+.product-gallery-inner{max-width:1350px;margin:auto}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 7px 25px rgba(20,50,70,.10);transition:.22s;cursor:pointer;outline:none}
+.product-card:hover,.product-card:focus{transform:translateY(-5px);box-shadow:0 14px 34px rgba(20,50,70,.18)}
+.product-image-wrap{position:relative;background:#f7f9fb}
+.product-card img{display:block;width:100%;height:340px;object-fit:contain;padding:12px}
+.wa-badge{position:absolute;right:12px;top:12px;background:var(--green);color:#fff;padding:7px 10px;border-radius:20px;font-size:12px;font-weight:700;box-shadow:0 3px 10px rgba(0,0,0,.15)}
+.product-info{padding:18px 20px 22px}
+.product-number{font-size:11px;letter-spacing:1.2px;color:var(--blue);font-weight:800}
+.product-info h3{margin:7px 0;color:#0b334b;font-size:19px}
+.product-info p{margin:0 0 12px;color:var(--muted);font-size:14px}
+.product-action{font-size:13px;color:#148447;font-weight:700}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about img{width:100%;height:390px;object-fit:contain;background:#f7f9fb;border-radius:18px}
+.about h2{font-size:40px;color:var(--navy2)}
+.stats{background:var(--navy2);color:#fff;max-width:none}
+.statgrid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:15px}
+.stat strong{font-size:35px;color:var(--cyan);display:block}
+.stat span{color:#d1dce1}
+.contact{background:#fff;border-radius:18px;padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:35px;box-shadow:0 7px 25px rgba(20,50,70,.08)}
+.contact h2{color:var(--navy2)}
+.contact p{line-height:1.8;color:#596a75}
+.contact a{color:#0878b7}
+footer{background:#06131d;color:#bdcbd3;text-align:center;padding:32px}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--green);color:#fff;text-decoration:none;font-weight:800;padding:14px 18px;border-radius:999px;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+.wa-modal{position:fixed;inset:0;background:rgba(0,0,0,.62);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.wa-modal.open{display:flex}
+.wa-box{width:min(440px,100%);background:#fff;border-radius:20px;padding:28px;box-shadow:0 20px 70px rgba(0,0,0,.35)}
+.wa-box h3{margin:0 0 8px;color:var(--navy2);font-size:24px}
+.wa-box p{color:var(--muted);margin:0 0 20px}
+.wa-choice{display:block;width:100%;border:0;border-radius:10px;padding:14px 16px;margin:10px 0;text-decoration:none;font-weight:800;text-align:center;cursor:pointer;font-size:15px}
+.wa-choice.info{background:#eaf7ff;color:#0878b7}
+.wa-choice.service{background:#eafaf1;color:#148447}
+.wa-close{background:#eef1f4;color:#47545e}
+
+.request-section{background:linear-gradient(180deg,#eef8ff,#f8fbfd);max-width:none}
+.request-wrap{max-width:1050px;margin:auto;background:#fff;border-radius:22px;padding:35px;box-shadow:0 10px 35px rgba(20,50,70,.10)}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.form-field{display:flex;flex-direction:column;gap:7px}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-weight:700;color:#17384b}
+.form-field input,.form-field select,.form-field textarea{width:100%;padding:13px 14px;border:1px solid #ccd8df;border-radius:10px;font:inherit;background:#fff}
+.form-field textarea{min-height:110px;resize:vertical}
+.form-actions{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.form-note{font-size:13px;color:#6b7b85;margin-top:12px}
+.google-btn{background:#4285f4;color:#fff}
+.success-box{display:none;margin-top:18px;padding:14px 16px;border-radius:10px;background:#eafaf1;color:#146b3e;font-weight:700}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.request-wrap{padding:22px}}
+
+@media(max-width:1000px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){
+ nav{height:64px;padding:0 5%}
+ .links{display:none}
+ .hero{min-height:560px}
+ .hero-content{margin-left:2%;padding:45px 12px}
+ section{padding:58px 5%}
+ .about,.contact{grid-template-columns:1fr}
+ .statgrid{grid-template-columns:repeat(2,1fr)}
+ .product-grid{grid-template-columns:1fr}
+ .product-card img{height:360px}
+ .contact{padding:28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">ZENVIEW<span>VISION</span> CCTV</div>
+  <div class="links">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#products">Cameras</a>
+    <a href="#request">Book Service</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="badge">🔒 YOUR SAFETY, OUR PRIORITY</div>
+    <h1>Professional CCTV Security Solutions</h1>
+    <p>Expert CCTV camera installation, servicing and maintenance for homes, shops, offices and businesses. Explore our camera range and contact ZENVIEW directly on WhatsApp.</p>
+    <a class="btn blue" href="#products">View Camera Range</a>
+    <a class="btn green" href="https://wa.me/918074879327?text=Hello%20ZENVIEW%2C%20I%20want%20information%20about%20your%20CCTV%20solutions." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+    <a class="btn outline" href="tel:+918074879327">📞 Call Now</a>
+  </div>
+</header>
+
+<section id="services">
+  <div class="title"><div class="badge">OUR SERVICES</div><h2>Installation & Servicing</h2><p>Book CCTV installation, servicing, repair or maintenance by submitting your customer details.</p></div>
+  <div class="grid">
+    <div class="card" data-wa-item="CCTV Installation" tabindex="0" role="button"><div class="icon">📹</div><h3>CCTV Installation</h3><p>Professional installation for homes, apartments, shops and offices.</p></div>
+    <div class="card" data-wa-item="CCTV Camera Servicing" tabindex="0" role="button"><div class="icon">🔧</div><h3>Camera Servicing</h3><p>Diagnosis and servicing to keep your surveillance system working smoothly.</p></div>
+    <div class="card" data-wa-item="CCTV Maintenance & Repair" tabindex="0" role="button"><div class="icon">🛠️</div><h3>Maintenance & Repair</h3><p>Maintenance and repair support for CCTV systems and related equipment.</p></div>
+    <div class="card" data-wa-item="Mobile Viewing Setup" tabindex="0" role="button"><div class="icon">📱</div><h3>Mobile Viewing Setup</h3><p>Get convenient access to your security cameras from your smartphone.</p></div>
+  </div>
+</section>
+
+<section id="request" class="request-section">
+  <div class="title"><div class="badge">SERVICE REQUEST</div><h2>Book Installation or Servicing</h2><p>Fill in the customer details below. You can send the request directly to ZENVIEW on WhatsApp.</p></div>
+  <div class="request-wrap">
+    <form id="serviceForm">
+      <div class="form-grid">
+        <div class="form-field"><label for="customerName">Customer Name *</label><input id="customerName" name="customerName" required placeholder="Enter customer name"></div>
+        <div class="form-field"><label for="contactNumber">Contact Number *</label><input id="contactNumber" name="contactNumber" type="tel" required placeholder="10-digit mobile number"></div>
+        <div class="form-field"><label for="houseNo">House No. *</label><input id="houseNo" name="houseNo" required placeholder="House / Door number"></div>
+        <div class="form-field"><label for="area">Area *</label><input id="area" name="area" required placeholder="Area / locality"></div>
+        <div class="form-field"><label for="district">District *</label><input id="district" name="district" required placeholder="District"></div>
+        <div class="form-field"><label for="state">State *</label><input id="state" name="state" value="Andhra Pradesh" required placeholder="State"></div>
+        <div class="form-field"><label for="pincode">PIN Code</label><input id="pincode" name="pincode" inputmode="numeric" placeholder="PIN code"></div>
+        <div class="form-field"><label for="serviceType">What do you want? *</label><select id="serviceType" name="serviceType" required><option value="">Select service</option><option>CCTV Installation</option><option>CCTV Servicing</option><option>CCTV Repair</option><option>CCTV Maintenance</option><option>Camera Replacement</option><option>Mobile Viewing Setup</option><option>Other</option></select></div>
+        <div class="form-field full"><label for="address">Full Address *</label><textarea id="address" name="address" required placeholder="Street, landmark, village/town and complete address"></textarea></div>
+        <div class="form-field full"><label for="details">Additional Details</label><textarea id="details" name="details" placeholder="Tell us about the problem, number of cameras, preferred visit time, etc."></textarea></div>
+      </div>
+      <div class="form-actions">
+        <button class="btn green" type="submit">💬 Send Request on WhatsApp</button>
+        <a class="btn google-btn" href="YOUR_GOOGLE_FORM_URL_HERE" target="_blank" rel="noopener">📝 Open Google Form</a>
+      </div>
+      <div class="form-note">The Google Form button will work after you replace <strong>YOUR_GOOGLE_FORM_URL_HERE</strong> in this file with your Google Form link. A ready Google Form creator script is included in this package.</div>
+      <div id="formSuccess" class="success-box">Your request is ready. WhatsApp should open in a new tab.</div>
+    </form>
+  </div>
+</section>
+
+<section id="products" class="product-gallery">
+  <div class="product-gallery-inner">
+    <div class="title">
+      <div class="badge">CAMERA & SECURITY EQUIPMENT</div>
+      <h2>Featured Camera Range</h2>
+      <p>Click any camera or equipment image/card to open WhatsApp. Choose <strong>Get More Information</strong> or <strong>Servicing</strong>.</p>
+    </div>
+    <div class="product-grid">
+      
+        <article class="product-card" tabindex="0" role="button" data-wa-item="10X Hybrid Zoom Dual Lens Camera"
+                 aria-label="Contact us on WhatsApp about 10X Hybrid Zoom Dual Lens Camera">
+          <div class="product-image-wrap">
+            <img src="1000331870.jpg" alt="10X Hybrid Zoom Dual Lens Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 01</span>
+            <h3>10X Hybrid Zoom Dual Lens Camera</h3>
+            <p>Dual-lens camera solution with zoom support.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="4-View Solar Powered Camera"
+                 aria-label="Contact us on WhatsApp about 4-View Solar Powered Camera">
+          <div class="product-image-wrap">
+            <img src="1000331867.jpg" alt="4-View Solar Powered Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 02</span>
+            <h3>4-View Solar Powered Camera</h3>
+            <p>Solar-powered multi-view security solution.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="3MP+3MP Wi-Fi Dome Camera"
+                 aria-label="Contact us on WhatsApp about 3MP+3MP Wi-Fi Dome Camera">
+          <div class="product-image-wrap">
+            <img src="1000331858.jpg" alt="3MP+3MP Wi-Fi Dome Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 03</span>
+            <h3>3MP+3MP Wi-Fi Dome Camera</h3>
+            <p>Wi-Fi dual-lens outdoor dome camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="3MP Outdoor Bullet Camera"
+                 aria-label="Contact us on WhatsApp about 3MP Outdoor Bullet Camera">
+          <div class="product-image-wrap">
+            <img src="1000331864.jpg" alt="3MP Outdoor Bullet Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 04</span>
+            <h3>3MP Outdoor Bullet Camera</h3>
+            <p>Outdoor bullet camera for dependable surveillance.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="IP Speed Dome PTZ Camera"
+                 aria-label="Contact us on WhatsApp about IP Speed Dome PTZ Camera">
+          <div class="product-image-wrap">
+            <img src="1000331856.jpg" alt="IP Speed Dome PTZ Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 05</span>
+            <h3>IP Speed Dome PTZ Camera</h3>
+            <p>PTZ speed-dome surveillance solution.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Solar Camera Solution"
+                 aria-label="Contact us on WhatsApp about Solar Camera Solution">
+          <div class="product-image-wrap">
+            <img src="1000331854.jpg" alt="Solar Camera Solution" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 06</span>
+            <h3>Solar Camera Solution</h3>
+            <p>Solar-powered camera setup for outdoor locations.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Outdoor AI Camera"
+                 aria-label="Contact us on WhatsApp about Outdoor AI Camera">
+          <div class="product-image-wrap">
+            <img src="1000331850.jpg" alt="Outdoor AI Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 07</span>
+            <h3>Outdoor AI Camera</h3>
+            <p>Outdoor camera designed for smart surveillance.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Solar 3-VU AI Camera"
+                 aria-label="Contact us on WhatsApp about Solar 3-VU AI Camera">
+          <div class="product-image-wrap">
+            <img src="1000331847.jpg" alt="Solar 3-VU AI Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 08</span>
+            <h3>Solar 3-VU AI Camera</h3>
+            <p>AI-enabled solar security camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="3MP Solar Colour Camera"
+                 aria-label="Contact us on WhatsApp about 3MP Solar Colour Camera">
+          <div class="product-image-wrap">
+            <img src="1000331845.jpg" alt="3MP Solar Colour Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 09</span>
+            <h3>3MP Solar Colour Camera</h3>
+            <p>Solar colour-view security camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Next Gen 3MP+3MP 4G Camera"
+                 aria-label="Contact us on WhatsApp about Next Gen 3MP+3MP 4G Camera">
+          <div class="product-image-wrap">
+            <img src="1000331840.jpg" alt="Next Gen 3MP+3MP 4G Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 10</span>
+            <h3>Next Gen 3MP+3MP 4G Camera</h3>
+            <p>4G dual-camera Next Gen solution.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="4G / LTE Router"
+                 aria-label="Contact us on WhatsApp about 4G / LTE Router">
+          <div class="product-image-wrap">
+            <img src="1000331832.jpg" alt="4G / LTE Router" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 11</span>
+            <h3>4G / LTE Router</h3>
+            <p>Connectivity equipment for camera installations.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="CCTV DVR Recorder"
+                 aria-label="Contact us on WhatsApp about CCTV DVR Recorder">
+          <div class="product-image-wrap">
+            <img src="1000331829.jpg" alt="CCTV DVR Recorder" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 12</span>
+            <h3>CCTV DVR Recorder</h3>
+            <p>DVR recording equipment for CCTV systems.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Thinkwill Dual Lens Wi-Fi Camera"
+                 aria-label="Contact us on WhatsApp about Thinkwill Dual Lens Wi-Fi Camera">
+          <div class="product-image-wrap">
+            <img src="1000331823.jpg" alt="Thinkwill Dual Lens Wi-Fi Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 13</span>
+            <h3>Thinkwill Dual Lens Wi-Fi Camera</h3>
+            <p>Dual-lens Wi-Fi outdoor camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Next Gen 3MP+3MP Wi-Fi Camera"
+                 aria-label="Contact us on WhatsApp about Next Gen 3MP+3MP Wi-Fi Camera">
+          <div class="product-image-wrap">
+            <img src="1000331821.jpg" alt="Next Gen 3MP+3MP Wi-Fi Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 14</span>
+            <h3>Next Gen 3MP+3MP Wi-Fi Camera</h3>
+            <p>Wi-Fi dual-lens outdoor camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Next Gen 3MP 4G Camera"
+                 aria-label="Contact us on WhatsApp about Next Gen 3MP 4G Camera">
+          <div class="product-image-wrap">
+            <img src="1000331818.jpg" alt="Next Gen 3MP 4G Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 15</span>
+            <h3>Next Gen 3MP 4G Camera</h3>
+            <p>4G pan-tilt outdoor camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="3MP 4G Bullet WebCast Camera"
+                 aria-label="Contact us on WhatsApp about 3MP 4G Bullet WebCast Camera">
+          <div class="product-image-wrap">
+            <img src="1000331814.jpg" alt="3MP 4G Bullet WebCast Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 16</span>
+            <h3>3MP 4G Bullet WebCast Camera</h3>
+            <p>4G bullet camera with smart monitoring features.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="3MP+3MP Wi-Fi Outdoor Camera"
+                 aria-label="Contact us on WhatsApp about 3MP+3MP Wi-Fi Outdoor Camera">
+          <div class="product-image-wrap">
+            <img src="1000331810.jpg" alt="3MP+3MP Wi-Fi Outdoor Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 17</span>
+            <h3>3MP+3MP Wi-Fi Outdoor Camera</h3>
+            <p>Dual-lens Wi-Fi outdoor camera.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="3MP 4G Bullet Camera"
+                 aria-label="Contact us on WhatsApp about 3MP 4G Bullet Camera">
+          <div class="product-image-wrap">
+            <img src="1000331808.jpg" alt="3MP 4G Bullet Camera" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 18</span>
+            <h3>3MP 4G Bullet Camera</h3>
+            <p>4G bullet camera with two-way audio.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0" role="button" data-wa-item="Solar Multi-Camera Security System"
+                 aria-label="Contact us on WhatsApp about Solar Multi-Camera Security System">
+          <div class="product-image-wrap">
+            <img src="1000331798.jpg" alt="Solar Multi-Camera Security System" loading="lazy">
+            <span class="wa-badge">💬 WhatsApp</span>
+          </div>
+          <div class="product-info">
+            <span class="product-number">PRODUCT 19</span>
+            <h3>Solar Multi-Camera Security System</h3>
+            <p>Solar-powered multi-camera surveillance system.</p>
+            <span class="product-action">Click image/card for WhatsApp →</span>
+          </div>
+        </article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <img src="1000331810.jpg" alt="ZENVIEW CCTV camera solution">
+    <div>
+      <div class="badge">ABOUT US</div>
+      <h2>Security You Can Trust</h2>
+      <p>We provide dependable CCTV installation and servicing solutions designed around your security needs. Our goal is simple: quality service, reliable equipment and customer satisfaction.</p>
+      <p>Whether you need a new camera system or help maintaining an existing one, contact us for product information, installation and service support.</p>
+      <a class="btn blue" href="#contact">Contact Us Today</a>
+      <a class="btn green" href="https://wa.me/918074879327?text=Hello%20ZENVIEW%2C%20I%20need%20help%20with%20CCTV." target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="statgrid">
+    <div class="stat"><strong>24/7</strong><span>Security Focus</span></div>
+    <div class="stat"><strong>✓</strong><span>Professional Service</span></div>
+    <div class="stat"><strong>Fast</strong><span>Service Support</span></div>
+    <div class="stat"><strong>100%</strong><span>Customer Focus</span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <h2>Get in Touch</h2>
+      <p>Need CCTV installation, servicing, product information or a quotation? Contact ZENVIEW today.</p>
+      <p>
+        <strong>📞 Phone / WhatsApp:</strong> <a href="tel:+918074879327">+91 8074879327</a><br>
+        <strong>📧 Email:</strong> <a href="mailto:zenviewcctv@gmail.com">zenviewcctv@gmail.com</a><br>
+        <strong>📍 Location:</strong> Proddatur, Kadapa district, Andhra Pradesh<br>
+        <strong>PIN:</strong> 516360
+      </p>
+      <a class="btn green" href="https://wa.me/918074879327?text=Hello%20ZENVIEW%2C%20I%20would%20like%20to%20contact%20you." target="_blank" rel="noopener">💬 Open WhatsApp</a>
+    </div>
+    <div>
+      <h2>Why Choose Us?</h2>
+      <p>✓ Professional installation<br>✓ Reliable servicing<br>✓ Friendly customer support<br>✓ Solutions for home & business<br>✓ Quality-focused service<br>✓ Camera and security equipment options</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>ZENVIEW CCTV</strong><br><br>
+  CCTV Camera Installation • Servicing • Maintenance • Wholesale & Retail<br><br>
+  © 2026 ZENVIEW CCTV. All Rights Reserved.
+</footer>
+
+<a class="wa-float" href="https://wa.me/918074879327?text=Hello%20ZENVIEW%2C%20I%20want%20CCTV%20information." target="_blank" rel="noopener" aria-label="Open WhatsApp">💬 WhatsApp</a>
+
+<div id="waModal" class="wa-modal" role="dialog" aria-modal="true" aria-labelledby="waTitle">
+  <div class="wa-box">
+    <h3 id="waTitle">Contact ZENVIEW on WhatsApp</h3>
+    <p id="waText">Choose what you need help with.</p>
+    <a id="waInfo" class="wa-choice info" target="_blank" rel="noopener">📋 Get More Information</a>
+    <a id="waService" class="wa-choice service" target="_blank" rel="noopener">🔧 Servicing</a>
+    <button id="waClose" class="wa-choice wa-close" type="button">Cancel</button>
+  </div>
+</div>
+
+<script>
+const ZENVIEW_WHATSAPP = '918074879327';
+
+function waUrl(message) {
+  return 'https://wa.me/' + ZENVIEW_WHATSAPP + '?text=' + encodeURIComponent(message);
+}
+
+function openWhatsAppOptions(itemName) {
+  const name = itemName || 'this CCTV product';
+  document.getElementById('waText').textContent = 'What would you like to know about ' + name + '?';
+  document.getElementById('waInfo').href = waUrl(
+    'Hello ZENVIEW, I want more information about ' + name +
+    '. Please share the price, specifications, availability and installation details.'
+  );
+  document.getElementById('waService').href = waUrl(
+    'Hello ZENVIEW, I need servicing for ' + name +
+    '. Please share service details, charges and availability.'
+  );
+  document.getElementById('waModal').classList.add('open');
+}
+
+function closeWhatsAppOptions() {
+  document.getElementById('waModal').classList.remove('open');
+}
+
+document.querySelectorAll('[data-wa-item]').forEach(function(el) {
+  el.addEventListener('click', function() {
+    openWhatsAppOptions(el.getAttribute('data-wa-item'));
+  });
+  el.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openWhatsAppOptions(el.getAttribute('data-wa-item'));
+    }
+  });
+});
+
+document.getElementById('waClose').addEventListener('click', closeWhatsAppOptions);
+document.getElementById('waModal').addEventListener('click', function(e) {
+  if (e.target === this) closeWhatsAppOptions();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeWhatsAppOptions();
+});
+
+const serviceForm = document.getElementById('serviceForm');
+if (serviceForm) {
+  serviceForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const get = id => document.getElementById(id).value.trim();
+    const message = [
+      'Hello ZENVIEW, I want to book CCTV service/installation.',
+      '',
+      'Customer Name: ' + get('customerName'),
+      'Contact Number: ' + get('contactNumber'),
+      'House No.: ' + get('houseNo'),
+      'Area: ' + get('area'),
+      'District: ' + get('district'),
+      'State: ' + get('state'),
+      'PIN Code: ' + get('pincode'),
+      'Service Required: ' + get('serviceType'),
+      'Full Address: ' + get('address'),
+      'Additional Details: ' + get('details')
+    ].join('\n');
+    document.getElementById('formSuccess').style.display='block';
+    window.open(waUrl(message), '_blank', 'noopener');
+  });
+}
+</script>
+
+</body>
+</html>

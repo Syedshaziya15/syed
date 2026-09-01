@@ -1,0 +1,25 @@
+ZENVIEW CCTV - GOOGLE FORM SETUP
+
+1. Open https://script.google.com/ while signed in to your Google account.
+2. Create a New project.
+3. Delete the sample code and paste the code from google_form_creator.gs.
+4. Save the project.
+5. Select createZenviewCctvServiceForm and click Run.
+6. Allow Google permissions when asked.
+7. Open Executions/Logs and copy the CUSTOMER FORM URL.
+8. Open index.html and replace YOUR_GOOGLE_FORM_URL_HERE with that URL.
+9. Upload the updated index.html and all JPG files to the root of your GitHub repository.
+
+The website also has a built-in request form that sends the entered customer details to ZENVIEW WhatsApp.
+
+Required Google Form fields:
+- Customer Name
+- Contact Number
+- House No.
+- Area
+- District
+- State
+- PIN Code
+- Full Address
+- What do you want? (Installation/Servicing/etc.)
+- Additional Details
